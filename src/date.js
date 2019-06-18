@@ -1,30 +1,18 @@
 import React from "react";
 import "./styles.scss";
 
-class Date extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      // value: null
-    };
-    // this.onChange = this.onChange.bind(this);
-  }
-  // onChange(e){
-  //   console.log(e.target.value)
-  //   this.setState(state => ({
-  //     value: e.target.value
-  //   }));
-  // }
-  render() {
-    return (
+function Date(props) {
+  return (
+    <React.Fragment>
+      <label htmlFor={props.id}>{props.label}</label>
       <input
         type="date"
         name="bday"
-        onChange={this.props.onChange}
-        value={this.props.value}
+        onChange={props.onChange}
+        value={props.value}
       />
-    );
-  }
+    </React.Fragment>
+  );
 }
 
 export default Date;

@@ -1,0 +1,23 @@
+input{
+  height: 2.5rem;
+  width: 16rem;
+  font-size: 1.95em;
+  padding: 0.15rem;
+}
+
+.App {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+::-webkit-datetime-edit { padding: 0.25rem; }
+::-webkit-datetime-edit-fields-wrapper { background: yellow; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: indigo; }
+::-webkit-inner-spin-button { display: none}
+::-webkit-calendar-picker-indicator { background: orange; }

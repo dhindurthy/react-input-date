@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Date from "./date.js";
+import Datedemo from "./datedemo.js";
 
 import "./styles.css";
 
 function App() {
   return (
     <div className="App">
-      <Date />
+      <Datedemo />
     </div>
   );
 }
